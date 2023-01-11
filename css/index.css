@@ -1,0 +1,660 @@
+/* Turn off the down area up on top, and up area on bottom */
+.stars {
+	width: 100px;
+	height: 20px;
+	margin: 5px auto 0 auto;
+
+}
+
+.cel .stars li {
+	background: url('../images/star_groups.png') no-repeat;
+	background-size: 96px 120px;
+	background-repeat: no-repeat;
+	display: block;
+	height: 20px;
+	width: 20px;
+	cursor: pointer;
+	float: left;
+
+}
+
+.cel .stars li.active {
+	background-position: left -20px;
+}
+
+.logostar {
+	float: left;
+	padding-top: 60px;
+	margin-right: 43px;
+	position: fixed color rgb(66, 66, 66);
+}
+
+::-webkit-scrollbar-button:vertical:start:increment,
+::-webkit-scrollbar-button:vertical:end:decrement {
+	display: none;
+}
+
+/* Top area above thumb and below up button */
+::-webkit-scrollbar-track-piece:vertical:start {
+	border: 1px solid #000;
+	background-color: #C2D2E4;
+}
+
+/* Bottom area below thumb and down button */
+::-webkit-scrollbar-track-piece:vertical:end {
+	border: 1px solid #000;
+	background-color: #0A4C95;
+}
+
+::-webkit-scrollbar {
+	width: 6px;
+	height: 15px;
+	border-radius: 10px;
+}
+
+::-webkit-scrollbar-track-piece {
+	-webkit-border-image: url('../images/barra.png') 0 15 0 15;
+	background-color: #C2D2E4;
+	border-radius: 50px;
+	height: 15px;
+}
+
+::-webkit-scrollbar-thumb:vertical {
+	height: 15px;
+	width: 10px;
+	background-image: url('../images/barra3.png') 15 0 15 0 stretch stretch;
+	border-radius: 10px;
+	border: 2px dotted white;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: red;
+}
+
+::-webkit-scrollbar-thumb:horizontal {
+	height: 52px;
+	width: 10px;
+}
+
+body {
+	background-image: url('../images/background2.jpg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: right-top;
+	background-size: 1280px 800px;
+	overflow: hidden;
+}
+
+.Encap {
+	left: 53em;
+	width: 61%;
+	top: 82px;
+	position: fixed;
+	z-index: 3;
+}
+
+.logo #logo {
+	/* background: url('../images/logo_completa.png') top repeat-y;*/
+	position: absolute;
+	/*left: 35px; top: 330px;*/
+	left: 23px;
+	top: 474px;
+	float: left;
+}
+
+.logo #info {
+	position: absolute;
+	left: 30px;
+	top: 415px;
+	;
+	float: left;
+	visibility: hidden;
+	z-index: -1;
+}
+
+.logo:hover #logo {
+	position: relative;
+	left: 23px;
+	top: 200px;
+	float: left;
+}
+
+.logo:hover #info {
+	position: absolute;
+	left: 30px;
+	top: 415px;
+	float: left;
+	visibility: visible;
+}
+
+.logo #shadow {
+	position: absolute;
+	left: 28px;
+	top: 685px;
+	float: left;
+	width: 199px;
+}
+
+.logo:hover #shadow .shadow {
+	position: absolute;
+	left: 28px;
+	top: 0px;
+	float: left;
+	width: 150px;
+}
+
+.bmenu {
+	width: 800px;
+	margin: 34px 250px;
+	padding: 0px;
+	/*display:none;*/
+
+}
+
+#contbody {
+	position: fixed;
+	height: 37em;
+	top: 85px;
+	width: 795px;
+	left: 220px;
+	overflow: auto;
+	display: inline-block;
+}
+
+.simple,
+.simple1,
+.simple2,
+.simple3,
+.simple4 {
+	background-color: rgba(90, 90, 105, 0.2);
+	margin-right: 5px;
+	height: 8.5em;
+	line-height: auto;
+	padding: 0px 4.1%;
+	color: black;
+	text-decoration: none;
+	display: block;
+	border: 0px solid white;
+	border-radius: 30px;
+}
+
+.simpled {
+	background-color: rgba(90, 90, 105, 0.2);
+	margin-right: 5px;
+	height: 6.5em;
+	line-height: auto;
+	padding: 0px 4.1%;
+	color: black;
+	text-decoration: none;
+	display: block;
+	border: 0px solid white;
+	border-radius: 30px;
+	position: relative
+}
+
+.simpl {
+	background-color: rgba(90, 90, 105, 0.2);
+	margin-right: 5px;
+	height: 18em;
+	line-height: auto;
+	margin-top: 100px;
+	padding: 0px 4.1%;
+	color: black;
+	text-decoration: none;
+	display: block;
+	border: 0px solid white;
+	border-radius: 30px;
+}
+
+.simplw {
+	background-color: rgba(90, 90, 105, 0.2);
+	margin-right: 5px;
+	height: 4em;
+	line-height: auto;
+	margin-top: 10px;
+	padding: 0px 4.1%;
+	color: black;
+	text-decoration: none;
+	display: block;
+	border: 0px solid white;
+	border-radius: 30px;
+}
+
+.simplz {
+	background-color: rgba(90, 90, 105, 0.2);
+	margin-right: 5px;
+	height: 24em;
+	width: 39.3em;
+	line-height: auto;
+	margin-top: 100px;
+	padding: 0px 4.1%;
+	color: black;
+	text-decoration: none;
+	display: block;
+	border: 0px solid white;
+	border-radius: 30px;
+	z-index: -1;
+	position: fixed;
+}
+
+.simplc {
+	background-color: rgba(200, 200, 235, 0.0);
+	position: fixed;
+	margin-left: 70px;
+	height: 14em;
+	width: 40em;
+	line-height: auto;
+	margin-top: 220px;
+	padding: 0px 1%;
+	color: black;
+	z-index: +1;
+	text-decoration: none;
+	display: block;
+	border: 0px solid white;
+	border-radius: 30px;
+}
+
+textarea {
+	background-color: rgba(200, 200, 235, 0.5);
+	border: 0px solid white;
+	border-radius: 30px;
+}
+
+.log {
+	background-color: white;
+	height: 13px;
+	width: 165px;
+	display: inline-block;
+}
+
+.sim {
+	z-index: -3;
+	position: fixed;
+	margin: -8px 0px 0px -18px;
+
+}
+
+.seta {
+	position: fixed;
+	height: 50px;
+	width: 60px;
+	margin: 600px 650px 500px 640px;
+	border: 2px solid red;
+	float: left;
+}
+
+.seta {
+	position: fixed;
+	height: 50px;
+	width: 60px;
+	margin: 600px 650px 500px 640px;
+	border: 0px solid red;
+	float: left;
+}
+
+.seta1 {
+	position: fixed;
+	height: 50px;
+	width: 60px;
+	margin: 600px 650px 500px 560px;
+	border: 0px solid red;
+	float: left;
+}
+
+.all {
+	background-color: rgba(90, 90, 105, 0.2);
+	margin-right: 5px;
+	height: 20em;
+	line-height: auto;
+	padding: 0px 4.1%;
+	color: black;
+	text-decoration: none;
+	display: block;
+	border: 0px solid white;
+	border-radius: 30px;
+}
+
+.all1,
+.all2,
+.all3,
+.all4 {
+	background-color: rgba(90, 90, 105, 0.2);
+	margin-right: 5px;
+	height: 11em;
+	line-height: auto;
+	padding: 0px 4.1%;
+	color: black;
+	text-decoration: none;
+	display: block;
+	border: 0px solid white;
+	border-radius: 30px;
+}
+
+.class {
+	margin: auto;
+	height: auto;
+	text-decoration: none;
+	display: block;
+}
+
+#contbody .cel {
+	margin-bottom: 3px;
+}
+
+.titles,
+.dates {
+	color: black;
+	text-decoration: none;
+	float: left;
+}
+
+.titles {
+	font-size: 20px;
+
+}
+
+.titlesk {
+	font-size: 20px;
+	position: fixed;
+}
+
+.titles1 {
+	color: black;
+	text-decoration: none;
+	float: left;
+	margin-top: 10px;
+}
+
+.titlesl {
+	font-size: 16px;
+	color: black;
+	text-decoration: none;
+	float: left;
+	margin-top: 5px;
+	width: 250px;
+}
+
+.titleslq {
+	font-size: 16px;
+	color: rgb(66, 66, 66);
+	text-decoration: none;
+	float: left;
+	width: 250px;
+}
+
+.titlesc {
+	font-size: 16px;
+	color: black;
+	margin-left: -20px;
+	text-decoration: none;
+	float: left;
+	margin-top: 20px;
+	width: 200px;
+}
+
+.titles2 {
+	font-size: 16px;
+	color: black;
+	text-decoration: none;
+	float: left;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	width: 450px;
+
+}
+
+.titles2q {
+	font-size: 16px;
+	color: rgb(66, 66, 66);
+	text-decoration: none;
+	float: left;
+	margin-bottom: 5px;
+	width: 450px;
+}
+
+.text {
+	float: left;
+	text-align: justify;
+}
+
+.textd {
+	float: left;
+	position: fixed;
+	color: rgb(55, 55, 55);
+	margin-left: 10px;
+	margin-top: 10px;
+}
+
+.text1 {
+	text-align: justify;
+	width: 440px;
+	height: 250px;
+	margin-left: -275px;
+	margin-top: 10px;
+	float: left;
+}
+
+.text2 {
+	text-align: justify;
+	width: 540px;
+	height: 250px;
+	margin-left: -35px;
+	margin-top: 20px;
+	float: left;
+}
+
+.cont1i {
+	width: 150px;
+	height: 180px;
+	margin-top: 25px;
+	margin-left: 20px;
+	float: left;
+}
+
+.image {
+	float: right;
+	padding-top: 9px;
+	margin-right: -5px;
+	margin-bottom: 0px;
+}
+
+.image1 {
+	float: right;
+	padding-top: 9px;
+	margin-right: -115px;
+}
+
+.imaged {
+	float: right;
+	padding-top: 9px;
+	margin-right: 45px;
+}
+
+.redes_sociais {
+	width: 150px;
+	height: 25px;
+	margin: 30px 50px 15px 0px;
+	color: rgb(55, 55, 55);
+	float: right;
+}
+
+.redes_sociais1 {
+	width: 150px;
+	height: 25px;
+	margin: 65px 10px 0px 50px;
+	color: rgb(55, 55, 55);
+	float: right;
+}
+
+.redes_sociais_img {
+	width: 80px;
+	height: 35px;
+	float: right;
+	margin-top: 0px;
+	margin-right: -25px;
+	background-repeat: no-repeat;
+	background-size: 79px 20px;
+	background-image: url(../images/redes_sociais_juntas.png);
+}
+
+.dates {
+	text-align: right;
+	float: right;
+}
+
+/* Structure Apoio
+------------------------------------------*/
+.apoio #ufrn {
+	position: fixed;
+	top: 120px;
+	width: 35px;
+	left: 1150px;
+}
+
+.apoio:hover #ufrn {
+	position: fixed;
+	top: 120px;
+	width: 35px;
+	left: 1150px;
+}
+
+.apoio #tufrn {
+	position: fixed;
+	top: 120px;
+	width: 35px;
+	z-index: -1;
+	left: 1050px;
+	visibility: hidden;
+}
+
+.apoio:hover #tufrn {
+	position: fixed;
+	top: 120px;
+	width: 35px;
+	z-index: 1;
+	left: 1050px;
+	visibility: visible;
+}
+
+.apoio1 #rnp {
+	position: fixed;
+	top: 170px;
+	width: 35px;
+	z-index: -1;
+	left: 1150px;
+}
+
+.apoio1:hover #rnp {
+	position: fixed;
+	top: 170px;
+	width: 35px;
+	z-index: 1;
+	left: 1150px;
+}
+
+.apoio1 #trnp {
+	position: fixed;
+	top: 170px;
+	width: 35px;
+	z-index: -1;
+	left: 1050px;
+	visibility: hidden;
+}
+
+.apoio1:hover #trnp {
+	position: fixed;
+	top: 175px;
+	width: 35px;
+	z-index: 1;
+	left: 1050px;
+	visibility: visible;
+}
+
+img.format {
+	opacity: 1 -moz-opacity 1;
+}
+
+/* Clear
+------------------------------------------*/
+.clear:before,
+.clear:after {
+	content: "";
+	display: table;
+}
+
+.clear:after {
+	clear: both;
+}
+
+.clear {
+	zoom: 1;
+}
+
+/* Structure Menu
+------------------------------------------*/
+#Menu,
+#Menu ul,
+li {
+	padding: 0;
+	list-style: none;
+}
+
+#Menu li a {
+	background: white;
+	display: block;
+	height: 1.5em;
+	line-height: auto;
+	padding: 0em 4.1%;
+	color: white;
+	text-decoration: none;
+	float: left;
+	border: 1px ridge #eeeeee;
+	border-radius: 50px;
+	box-shadow: -6px -6px 10px 2px gray inset;
+}
+
+#Menu li:hover ul {
+	display: block;
+}
+
+/* Main menu
+------------------------------------------*/
+#Menu {
+	font-family: Arial;
+	font-size: 20px;
+	background: white;
+	margin: 0px;
+	padding: 0;
+}
+
+#Menu>li>a {
+	color: black;
+	font-weight: bold;
+}
+
+#Menu>li:hover>a {
+	background: rgb(30, 30, 30);
+	height: 2.1em;
+	color: #eee;
+	padding-top: .3em;
+	border-radius: 1em 1em 0 0;
+	position: relative;
+	top: -.3em;
+	cursor: default;
+	border: 0;
+	box-shadow: none;
+}
+
+#Menu .current,
+a:hover.current {
+	background: rgb(30, 30, 30);
+	color: #eee;
+	height: 2.1em;
+	padding-top: .3em;
+	border-radius: 1em 1em 0 0;
+	position: relative;
+	top: -.3em;
+	cursor: default;
+	border: 0;
+	box-shadow: none;
+}

@@ -1,0 +1,851 @@
+<!DOCTYPE html
+	PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<title> WORKSPACE </title>
+	<link href="css/index.css" rel="stylesheet" type="text/css" media="screen" />
+	<script src='http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js'></script>
+	<script type="text/javascript" src="js/plus.js"></script>
+	<script type="text/javascript" src="js/plus1.js"></script>
+	<script type="text/javascript" src="js/jquery-1.4.1.min.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$('.stars li').click(function () {
+				var $this = $(this);
+				var ol = $this.parent('ol');
+				var rating = $this.index() + 1;
+				var id_produto = ol.parent('li').find("input[name='id_produto[]']").val();
+
+				if ($this.hasClass('active') && !$this.next('li').hasClass('active')) {
+					$(ol).find('li').removeClass('active');
+					rating = 0;
+				} else {
+					$(ol).find('li').removeClass('active');
+					for (var i = 0; i < rating; i++) {
+						$(ol).find('li').eq(i).addClass('active');
+					};
+				}
+
+			});
+		});
+	</script>
+</head>
+
+<body>
+
+	<div>
+		<div class="logo">
+			<div id="logo"><img src="images/logo_completa.png" no-repeat>
+			</div>
+			<div id="info"><img src="images/texto_luar.png" no-repeat>
+			</div>
+			<div id="shadow"><img src="images/sombra_logo.png" no-repeat class="shadow">
+			</div>
+		</div>
+	</div>
+	<div class="al0">
+		<div class="bmenu">
+			<nav class="clear">
+				<ul id="Menu">
+					<li>
+						<img class="sim" src="images/home_e_contato_selecionado.png" height="80px" width="145px"><a
+							href="index.html" class="current"><span class="but2">HOME</span></a>
+					</li>
+					<li>
+						<a href="index.html" class="transition"><span class="but1">PROJETO</span></a>
+					</li>
+					<li>
+						<a href="index.html" class="transition"><span class="but">DOWNLOAD</span></a>
+					</li>
+					<li>
+						<a href="index.html" class="transition"><span class="but3">EQUIPE</span></a>
+					</li>
+					<li>
+						<a href="index.html" class="transition"><span class="but4">CONTATO</span></a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+		<div class="cont">
+			<div class="expand_top">
+				<div class="expand_all"></div>
+			</div>
+			<nav class="clear">
+				<ul id="contbody">
+					<li class="cel">
+						<div class="simple">
+							<nav>
+					<li class="titles">
+						<b>A origem da Lua é incerta</b>
+					</li>
+					<li class="dates">
+						12/04/2013
+					</li>
+			</nav>
+			<div class="text">
+				Mas as similaridades no teor dos elementos encontrados tanto na Lua quanto na Terra indicam que ambos os
+				corpos podem ter tido uma origem comum.
+				Nesse aspecto, alguns astrônomos e geólogos alegam que a Lua teria se desprendido de uma massa
+				incandescente de rocha liqüefeita primordial, recém-formada, através da força centrípeta.
+			</div>
+			<div class="image">
+				<a href="#" class="button"><img src="images/mais.png" alt="" width="35" height="15" hspace="20"></a>
+			</div>
+		</div>
+		<div class="all">
+			<nav>
+
+				<li class="titles">
+					<b>Luar se apresenta em Congresso</br></b>
+				</li>
+				<li class="dates">
+					12/04/2013
+				</li>
+			</nav>
+			<div class="text1">
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+					et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+					aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+					eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+					exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+				</p>
+				<div class="redes_sociais">
+					Compartilhar:
+					<a href="#" class="r">
+						<div class="redes_sociais_img">
+
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="cont1i">
+				<img src="images/lua_logo.gif" />
+				<div class="image1">
+					<a href="#" class="button0"><img src="images/mais.png" alt="" width="35" height="15"
+							hspace="20"></a>
+				</div>
+			</div>
+
+		</div>
+
+		</li>
+		<li class="cel">
+			<div class="simple1">
+				<nav>
+		<li class="titles">
+			<b>A origem da Lua é incerta</b>
+		</li>
+		<li class="dates">
+			12/04/2013
+		</li>
+		</nav>
+		<div class="text">
+			Mas as similaridades no teor dos elementos encontrados tanto na Lua quanto na Terra indicam que ambos os
+			corpos podem ter tido uma origem comum.
+			Nesse aspecto, alguns astrônomos e geólogos alegam que a Lua teria se desprendido de uma massa incandescente
+			de rocha liqüefeita primordial, recém-formada, através da força centrípeta.
+		</div>
+		<div class="image">
+			<a href="#" class="button1"><img src="images/mais.png" alt="" width="35" height="15" hspace="20"></a>
+		</div>
+	</div>
+	<div class="all1">
+		<nav>
+
+			<li class="titles">
+				<b>A origem da Lua é incerta</b>
+			</li>
+			<li class="dates">
+				12/04/2013
+			</li>
+		</nav>
+		<div class="text">
+			Mas as similaridades no teor dos elementos encontrados tanto na Lua quanto na Terra indicam que ambos os
+			corpos podem ter tido uma origem comum.
+			Nesse aspecto, alguns astrônomos e geólogos alegam que a Lua teria se desprendido de uma massa incandescente
+			de rocha liqüefeita primordial, recém-formada, através da força centrípeta.
+			Mas as similaridades no teor dos elementos encontrados tanto na Lua quanto na Terra indicam que ambos os
+			corpos podem ter tido uma origem comum.
+			Nesse aspecto, alguns astrônomos e geólogos alegam que a Lua teria se desprendido de uma massa incandescente
+			de rocha liqüefeita primordial, recém-formada, através da força centrípeta.
+		</div>
+		<div class="image">
+			<a href="#" class="button1"><img src="images/mais.png" alt="" width="35" height="15" hspace="20"></a>
+		</div>
+	</div>
+
+	</li>
+	<li class="cel">
+		<div class="simple2">
+			<nav>
+	<li class="titles">
+		<b>A origem da Lua é incerta</b>
+	</li>
+	<li class="dates">
+		12/04/2013
+	</li>
+	</nav>
+	<div class="text">
+		Mas as similaridades no teor dos elementos encontrados tanto na Lua quanto na Terra indicam que ambos os corpos
+		podem ter tido uma origem comum.
+		Nesse aspecto, alguns astrônomos e geólogos alegam que a Lua teria se desprendido de uma massa incandescente de
+		rocha liqüefeita primordial, recém-formada, através da força centrípeta.
+	</div>
+	<div class="image">
+		<a href="#" class="button2"><img src="images/mais.png" alt="" width="35" height="15" hspace="20"></a>
+	</div>
+	</div>
+	<div class="all2">
+		<nav>
+
+			<li class="titles">
+				<b>A origem da Lua é incerta</b>
+			</li>
+			<li class="dates">
+				12/04/2013
+			</li>
+		</nav>
+		<div class="text">
+			Mas as similaridades no teor dos elementos encontrados tanto na Lua quanto na Terra indicam que ambos os
+			corpos podem ter tido uma origem comum.
+			Nesse aspecto, alguns astrônomos e geólogos alegam que a Lua teria se desprendido de uma massa incandescente
+			de rocha liqüefeita primordial, recém-formada, através da força centrípeta.
+			Mas as similaridades no teor dos elementos encontrados tanto na Lua quanto na Terra indicam que ambos os
+			corpos podem ter tido uma origem comum.
+			Nesse aspecto, alguns astrônomos e geólogos alegam que a Lua teria se desprendido de uma massa incandescente
+			de rocha liqüefeita primordial, recém-formada, através da força centrípeta.
+		</div>
+		<div class="image">
+			<a href="#" class="button2"><img src="images/mais.png" alt="" width="35" height="15" hspace="20"></a>
+		</div>
+	</div>
+
+	</li>
+	<li class="cel">
+		<div class="simple3">
+			<nav>
+	<li class="titles">
+		<b>A origem da Lua é incerta</b>
+	</li>
+	<li class="dates">
+		12/04/2013
+	</li>
+	</nav>
+	<div class="text">
+		Mas as similaridades no teor dos elementos encontrados tanto na Lua quanto na Terra indicam que ambos os corpos
+		podem ter tido uma origem comum.
+		Nesse aspecto, alguns astrônomos e geólogos alegam que a Lua teria se desprendido de uma massa incandescente de
+		rocha liqüefeita primordial, recém-formada, através da força centrípeta.
+	</div>
+	<div class="image">
+		<a href="#" class="button3"><img src="images/mais.png" alt="" width="35" height="15" hspace="20"></a>
+	</div>
+	</div>
+	<div class="all3">
+		<nav>
+
+			<li class="titles">
+				<b>A origem da Lua é incerta</b>
+			</li>
+			<li class="dates">
+				12/04/2013
+			</li>
+		</nav>
+		<div class="text">
+			Mas as similaridades no teor dos elementos encontrados tanto na Lua quanto na Terra indicam que ambos os
+			corpos podem ter tido uma origem comum.
+			Nesse aspecto, alguns astrônomos e geólogos alegam que a Lua teria se desprendido de uma massa incandescente
+			de rocha liqüefeita primordial, recém-formada, através da força centrípeta.
+			Mas as similaridades no teor dos elementos encontrados tanto na Lua quanto na Terra indicam que ambos os
+			corpos podem ter tido uma origem comum.
+			Nesse aspecto, alguns astrônomos e geólogos alegam que a Lua teria se desprendido de uma massa incandescente
+			de rocha liqüefeita primordial, recém-formada, através da força centrípeta.
+		</div>
+		<div class="image">
+			<a href="#" class="button3"><img src="images/mais.png" alt="" width="35" height="15" hspace="20"></a>
+		</div>
+	</div>
+
+	</li>
+	<li class="cel">
+		<div class="simple4">
+			<nav>
+	<li class="titles">
+		<b>A origem da Lua é incerta</b>
+	</li>
+	<li class="dates">
+		12/04/2013
+	</li>
+	</nav>
+	<div class="text">
+		Mas as similaridades no teor dos elementos encontrados tanto na Lua quanto na Terra indicam que ambos os corpos
+		podem ter tido uma origem comum.
+		Nesse aspecto, alguns astrônomos e geólogos alegam que a Lua teria se desprendido de uma massa incandescente de
+		rocha liqüefeita primordial, recém-formada, através da força centrípeta.
+	</div>
+	<div class="image">
+		<a href="#" class="button4"><img src="images/mais.png" alt="" width="35" height="15" hspace="20"></a>
+	</div>
+	</div>
+	<div class="all4">
+		<nav>
+
+			<li class="titles">
+				<b>A origem da Lua é incerta</b>
+			</li>
+			<li class="dates">
+				12/04/2013
+			</li>
+		</nav>
+		<div class="text">
+			Mas as similaridades no teor dos elementos encontrados tanto na Lua quanto na Terra indicam que ambos os
+			corpos podem ter tido uma origem comum.
+			Nesse aspecto, alguns astrônomos e geólogos alegam que a Lua teria se desprendido de uma massa incandescente
+			de rocha liqüefeita primordial, recém-formada, através da força centrípeta.
+			Mas as similaridades no teor dos elementos encontrados tanto na Lua quanto na Terra indicam que ambos os
+			corpos podem ter tido uma origem comum.
+			Nesse aspecto, alguns astrônomos e geólogos alegam que a Lua teria se desprendido de uma massa incandescente
+			de rocha liqüefeita primordial, recém-formada, através da força centrípeta.
+		</div>
+		<div class="image">
+			<a href="#" class="button4"><img src="images/mais.png" alt="" width="35" height="15" hspace="20"></a>
+		</div>
+	</div>
+
+	</li>
+
+	</ul>
+	<a href="index.html" class="but1">
+		<div class="seta"></div>
+	</a>
+
+	<a href="index.html" class="but4">
+		<div class="seta1"></div>
+	</a>
+	</nav>
+	</div>
+	</div>
+
+	<div class="al">
+		<div class="bmenu">
+			<nav class="clear">
+				<ul id="Menu">
+					<li>
+						<a href="index.html" class="transition"><span class="but2">HOME</span></a>
+					</li>
+					<li>
+						<a href="index.html" class="transition"><span class="but1">PROJETO</span></a>
+					</li>
+					<li>
+						<a href="index.html" class="current"><span class="but">DOWNLOAD</span></a>
+					</li>
+					<li>
+						<a href="index.html" class="transition"><span class="but3">EQUIPE</span></a>
+					</li>
+					<li>
+						<a href="index.html" class="transition"><span class="but4">CONTATO</span></a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+
+		<div class="cont">
+			<div class="expand_top">
+				<div class="expand_all"></div>
+			</div>
+			<nav class="clear">
+				<ul id="contbody">
+					<li class="cel">
+						<div class="simpled">
+							<nav>
+					<li class="titlesk">
+						<b>WinRar</b>
+					</li>
+					<li class="dates">
+						12/04/2013
+					</li>
+			</nav>
+			<div class="imaged">
+				<a href="#" class="download"><img src="images/download.png" alt="" width="100%" height="90%"
+						hspace="20"></a>
+			</div>
+			<div class="textd">
+				<p>
+					3 Mb
+				</p>
+			</div>
+			<div class="logostar">
+				<ol class="stars">
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ol>
+				<input type="hidden" name="id_produto[]" value="15" />
+			</div>
+			<div class="redes_sociais1">
+				Compartilhar:
+				<a href="#" class="r">
+					<div class="redes_sociais_img">
+
+					</div>
+				</a>
+			</div>
+		</div>
+		</li>
+		<li class="cel">
+			<div class="simpled">
+				<nav>
+		<li class="titlesk">
+			<b>WinZip</b>
+		</li>
+		<li class="dates">
+			12/04/2013
+		</li>
+		</nav>
+		<div class="imaged">
+			<a href="#" class="download"><img src="images/download.png" alt="" width="100%" height="90%"
+					hspace="20"></a>
+		</div>
+		<div class="textd">
+			<p>
+				12 Mb
+			</p>
+		</div>
+		<div class="logostar">
+			<ol class="stars">
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ol>
+			<input type="hidden" name="id_produto[]" value="15" />
+		</div>
+		<div class="redes_sociais1">
+			Compartilhar:
+			<a href="#" class="r">
+				<div class="redes_sociais_img">
+
+				</div>
+			</a>
+		</div>
+	</div>
+	</li>
+	<li class="cel">
+		<div class="simpled">
+			<nav>
+	<li class="titlesk">
+		<b>DirectX</b>
+	</li>
+	<li class="dates">
+		12/04/2013
+	</li>
+	</nav>
+	<div class="imaged">
+		<a href="#" class="download"><img src="images/download.png" alt="" width="100%" height="90%" hspace="20"></a>
+	</div>
+	<div class="textd">
+		<p>
+			324 Kb
+		</p>
+	</div>
+	<div class="logostar">
+		<ol class="stars">
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ol>
+		<input type="hidden" name="id_produto[]" value="15" />
+	</div>
+	<div class="redes_sociais1">
+		Compartilhar:
+		<a href="#" class="r">
+			<div class="redes_sociais_img">
+
+			</div>
+		</a>
+	</div>
+	</div>
+	</li>
+	<li class="cel">
+		<div class="simpled">
+			<nav>
+	<li class="titlesk">
+		<b>7-Zip</b>
+	</li>
+	<li class="dates">
+		12/04/2013
+	</li>
+	</nav>
+	<div class="imaged">
+		<a href="#" class="download"><img src="images/download.png" alt="" width="100%" height="90%" hspace="20"></a>
+	</div>
+	<div class="textd">
+		<p>
+			9 Mb
+		</p>
+	</div>
+	<div class="logostar">
+		<ol class="stars">
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ol>
+		<input type="hidden" name="id_produto[]" value="15" />
+	</div>
+	<div class="redes_sociais1">
+		Compartilhar:
+		<a href="#" class="r">
+			<div class="redes_sociais_img">
+
+			</div>
+		</a>
+	</div>
+	</div>
+	</li>
+	<li class="cel">
+		<div class="simpled">
+			<nav>
+	<li class="titlesk">
+		<b>WMP</b>
+	</li>
+	<li class="dates">
+		12/04/2013
+	</li>
+	</nav>
+	<div class="imaged">
+		<a href="#" class="download"><img src="images/download.png" alt="" width="100%" height="90%" hspace="20"></a>
+	</div>
+	<div class="textd">
+		<p>
+			32 Mb
+		</p>
+	</div>
+	<div class="logostar">
+		<ol class="stars">
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ol>
+		<input type="hidden" name="id_produto[]" value="15" />
+	</div>
+	<div class="redes_sociais1">
+		Compartilhar:
+		<a href="#" class="r">
+			<div class="redes_sociais_img">
+
+			</div>
+		</a>
+	</div>
+	</div>
+	</li>
+
+	</ul>
+	<a href="index.html" class="but3">
+		<div class="seta"></div>
+	</a>
+
+	<a href="index.html" class="but1">
+		<div class="seta1"></div>
+	</a>
+	</nav>
+	</div>
+	</div>
+
+	<div class="al2">
+		<div class="bmenu">
+			<nav class="clear">
+				<ul id="Menu">
+					<li>
+						<a href="index.html" class="transition"><span class="but2">HOME</span></a>
+					</li>
+					<li>
+						<a href="index.html" class="current"><span class="but1">PROJETO</span></a>
+					</li>
+					<li>
+						<a href="index.html" class="transition"><span class="but">DOWNLOAD</span></a>
+					</li>
+					<li>
+						<a href="index.html" class="transition"><span class="but3">EQUIPE</span></a>
+					</li>
+					<li>
+						<a href="index.html" class="transition"><span class="but4">CONTATO</span></a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+		<div class="cont">
+			<div class="expand_top">
+				<div class="expand_all"></div>
+			</div>
+			<nav class="clear">
+				<ul id="contbody">
+					<li class="cel">
+						<div class="simpl">
+							<nav>
+					<li class="titles1">
+						<b>LUA</b></br>
+					</li>
+			</nav>
+			<div class="text2">
+				<p>
+					Não se sabe ao certo como a lua se originou, mas existem inúmeras teorias que relatam seu
+					aparecimento em órbita. A teoria mais aceita hoje diz que a lua se formou através de uma colisão
+					entre o planeta Terra e um corpo do tamanho de Marte, há aproximadamente 4,6 bilhões de anos.
+
+					Acredita-se que o choque entre os dois corpos aconteceu na última fase do processo de formação da
+					Terra, quando parte do seu núcleo se perdeu. Uma nuvem de poeira se formou sobre a Terra em razão da
+					colisão.
+
+					A parte perdida do núcleo sofreu um processo de condensação e se aproximou do plano da eclíptica,
+					que fez com que este núcleo condensado entrasse em órbita. Sua temperatura após a condensação
+					explica a ausência de compostos voláteis nas rochas lunares.
+				</p>
+			</div>
+			<div class="cont1i">
+				<a href="#" class="download"><img src="images/lua_logo.gif" alt="" width="180px" height="180 px"
+						hspace="0" style="margin-top:15px;"></a>
+
+			</div>
+		</div>
+		</li>
+
+		</ul>
+		<a href="index.html" class="but">
+			<div class="seta"> </div>
+		</a>
+
+		<a href="index.html" class="but2">
+			<div class="seta1"> </div>
+		</a>
+		</nav>
+	</div>
+	</div>
+
+	<div class="al3">
+		<div class="bmenu">
+			<nav class="clear">
+				<ul id="Menu">
+					<li>
+						<a href="index.html" class="transition"><span class="but2">HOME</span></a>
+					</li>
+					<li>
+						<a href="index.html" class="transition"><span class="but1">PROJETO</span></a>
+					</li>
+					<li>
+						<a href="index.html" class="transition"><span class="but">DOWNLOAD</span></a>
+					</li>
+					<li>
+						<a href="index.html" class="current"><span class="but3">EQUIPE</span></a>
+					</li>
+					<li>
+						<a href="index.html" class="transition"><span class="but4">CONTATO</span></a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+		<div class="cont">
+			<div class="expand_top">
+				<div class="expand_all"></div>
+			</div>
+			<nav class="clear">
+				<ul id="contbody">
+					<li class="cel">
+						<div class="simplw">
+							<nav>
+					<li class="titlesl">
+						<b>Kenshin Himura</b></br>
+					</li>
+					<li class="titles2">
+						<b>Hiten Mitsurugi Ryuu, Kenshin Ryuu, Técnica de Guarda-chuva</b></br>
+					</li>
+			</nav>
+
+			<nav>
+				<li class="titleslq">
+					Espadachim</br>
+				</li>
+				<li class="titles2q">
+					Contato:Mangá</br>
+				</li>
+
+			</nav>
+
+		</div>
+		<div class="simplw">
+			<nav>
+				<li class="titlesl">
+					<b>Yahiko Miyoujin</b></br>
+				</li>
+				<li class="titles2">
+					<b>Kamiya Kasshin/Cópia do estilo Mitsurugi</b></br>
+				</li>
+			</nav>
+
+			<nav>
+				<li class="titleslq">
+					Espadachim</br>
+				</li>
+				<li class="titles2q">
+					Contato:Mangá</br>
+				</li>
+
+			</nav>
+
+		</div>
+		<div class="simplw">
+			<nav>
+				<li class="titlesl">
+					<b>Kaoru Kamiya</b></br>
+				</li>
+				<li class="titles2">
+					<b>Kamiya Kasshin Ryu</b></br>
+				</li>
+			</nav>
+
+			<nav>
+				<li class="titleslq">
+					Espadachim</br>
+				</li>
+				<li class="titles2q">
+					Contato:Mangá</br>
+				</li>
+
+			</nav>
+
+		</div>
+
+		<div class="simplw">
+			<nav>
+				<li class="titlesl">
+					<b>Kashiwazaki Nenji</b></br>
+				</li>
+				<li class="titles2">
+					<b>Técnicas de luta da Oniwabanshuu</b></br>
+				</li>
+			</nav>
+
+			<nav>
+				<li class="titleslq">
+					Espadachim</br>
+				</li>
+				<li class="titles2q">
+					Contato:Mangá</br>
+				</li>
+
+			</nav>
+
+		</div>
+
+		</li>
+
+		</ul>
+		<a href="index.html" class="but4">
+			<div class="seta"></div>
+		</a>
+
+		<a href="index.html" class="but">
+			<div class="seta1"></div>
+		</a>
+		</nav>
+	</div>
+	</div>
+
+	<div class="al4">
+		<div class="bmenu">
+			<nav class="clear">
+				<ul id="Menu">
+					<li>
+						<a href="index.html" class="transition"><span class="but2">HOME</span></a>
+					</li>
+					<li>
+						<a href="index.html" class="transition"><span class="but1">PROJETO</span></a>
+					</li>
+					<li>
+						<a href="index.html" class="transition"><span class="but">DOWNLOAD</span></a>
+					</li>
+					<li>
+						<a href="index.html" class="transition"><span class="but3">EQUIPE</span></a>
+					</li>
+					<li>
+						<a href="index.html" class="current"><span class="but4">CONTATO</span></a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+		<div class="cont">
+			<div class="expand_top">
+				<div class="expand_all"></div>
+			</div>
+			<nav class="clear">
+				<ul id="contbody">
+					<li class="cel">
+						<div class="simplz">
+							<nav>
+					<li class="titlesc">
+						Contato: xxxx@gmail.com</br>
+						Diretores do Projeto - XXXXXXXXX</br>
+						Fulano: fulano@gmail.com</br>
+					</li>
+			</nav>
+		</div>
+		<div class="simplc">
+			<form method="post" action="">
+				Deixe sua Mensagem:</br>
+				<textarea name="comments" cols="75em" rows="13em"> </textarea>
+				<br>
+			</form>
+		</div>
+		</li>
+
+		</ul>
+		<a href="index.html" class="but2">
+			<div class="seta"></div>
+		</a>
+
+		<a href="index.html" class="but3">
+			<div class="seta1"></div>
+		</a>
+		</nav>
+	</div>
+	</div>
+
+	<div class="Encap">
+		<a href="#" class="search">
+			<form method="post" action="">
+				<textarea class="log" name="comments" cols="75em" rows="13em"></textarea>
+			</form>
+			<div class="log0"><img src="images/procurar.png" no-repeat>
+			</div>
+		</a>
+	</div>
+
+	<div class="apoio">
+		<div id="ufrn"><img src="images/ufrn_logo.png" no-repeat>
+		</div>
+		<div id="tufrn"><img src="images/ufrn.png" no-repeat class="format">
+		</div>
+	</div>
+
+	<div class="apoio1">
+		<div id="rnp"><img src="images/rnp_logo.png" no-repeat>
+		</div>
+		<div id="trnp"><img src="images/rnp.png" no-repeat class="format">
+		</div>
+	</div>
+	</div>
+</body>
+
+</html>
